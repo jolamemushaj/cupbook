@@ -3,20 +3,23 @@ import {RouterLink} from 'vue-router'
 import {ref} from "vue";
 
 const showMobileMenu = ref(false);
+const toggleMobileMenu = () => {
+    showMobileMenu.value = !showMobileMenu.value;
+}
 </script>
 
 <template>
     <header>
         <!----------------- MOBILE---------------->
         <nav class="block xl:hidden">
-            <div class="mx-auto max-w-7xl px-8 py-4 sm:px-8 lg:px-8 bg-tile">
+            <div class="mx-auto max-w-7xl px-8 py-4 bg-tile">
                 <div class="flex h-16 items-center justify-between">
-                    <div class="relative font-serif text-cinnamonMilkDark text-3xl font-black uppercase">
-                        CupBook
+                    <div class="relative text-cinnamonMilkDark text-4xl font-glorify">
+                        cupbook
                     </div>
                     <div class="-mr-2 flex xl:hidden">
                         <!-- Mobile menu button -->
-                        <button @click="showMobileMenu = ! showMobileMenu" type="button"
+                        <button @click=toggleMobileMenu type="button"
                                 class="relative inline-flex items-center justify-center rounded-md p-1 text-cinnamonMilkDark hover:text-cinnamonMilk focus:outline-none"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
@@ -58,36 +61,45 @@ const showMobileMenu = ref(false);
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div v-if="showMobileMenu" class="xl:hidden" id="mobile-menu">
-                <div class="space-y-1 px-4 pb-3 pt-6 bg-cinnamonMilkDark">
-                    <RouterLink to="/"
-                                class="font-serif font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
-                    >
-                        Home
-                    </RouterLink>
-                    <a href="#books"
-                       class="font-serif font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
-                    >
-                        Books
-                    </a>
-                    <a href="#events"
-                       class="font-serif font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
-                    >
-                        Events
-                    </a>
-                    <RouterLink to="/about"
-                                class="font-serif font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">
-                        About Us
-                    </RouterLink>
-                    <a href="/contact"
-                       class="font-serif font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">Contact</a>
+            <Transition name="slide-fade">
+                <div v-if="showMobileMenu" class="xl:hidden" id="mobile-menu">
+                    <div class="space-y-1 px-4 pb-3 pt-6 bg-cinnamonMilkDark">
+                        <RouterLink @click="toggleMobileMenu"
+                                    to="/"
+                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                        >
+                            Home
+                        </RouterLink>
+                        <a @click="toggleMobileMenu"
+                           href="/#books"
+                           class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                        >
+                            Books
+                        </a>
+                        <a @click="toggleMobileMenu"
+                           href="/#events"
+                           class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                        >
+                            Events
+                        </a>
+                        <RouterLink @click="toggleMobileMenu"
+                                    to="/about"
+                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">
+                            About Us
+                        </RouterLink>
+                        <RouterLink @click="toggleMobileMenu"
+                                    to="/contact"
+                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">
+                            Contact
+                        </RouterLink>
+                    </div>
                 </div>
-            </div>
+            </Transition>
         </nav>
 
 
         <!----------------- DESKTOP---------------->
-        <div class="relative hidden xl:block">
+        <div class="relative hidden xl:block ">
             <div class="flex justify-center bg-tile text-2xl text-cinnamonMilkDark py-3.5 font-glorify">
                 Sign up and enjoy 10% discount on all your purchases
             </div>
@@ -117,28 +129,39 @@ const showMobileMenu = ref(false);
                     <img alt="logo" class="w-80 h-48" src="@/images/first-nav-logo.svg" width="125" height="125"/>
                     <img alt="logo" class="w-2/3 h-48" src="@/images/second-nav-logo.svg" width="125" height="125"/>
                 </div>
-                <div class="flex flex-row">
-                    <img alt="logo" class="absolute raft-libra-01 w-96" src="@/images/raft-me-libra.svg"/>
-                    <img alt="logo" class="absolute raft-llambe top-80 right-80  w-96 h-80" src="../images/raft-me-llambe.svg"/>
+                <div class="max-w-7xl mx-auto flex flex-row">
+                    <img alt="logo" class="absolute raft-libra-01 w-80" src="@/images/raft-me-libra-01.svg"/>
+                    <img alt="logo" class="absolute raft-llambe w-64" src="../images/raft-me-llambe.svg"/>
                     <img alt="logo" class="absolute raft-lule" src="../images/raft-me-lule.svg"/>
                     <img alt="logo" class="absolute vazo-lule w-40" src="@/images/vazo-luleje.svg"/>
                     <img alt="logo" class="absolute raft-libra-02 w-96" src="@/images/raft-me-libra.svg"/>
                     <img alt="logo" class="absolute raft-libra-03 w-96" src="@/images/raft-me-libra.svg"/>
+                    <img alt="logo" class="absolute raft-libra-04 w-80 hidden 2xl:block"
+                         src="@/images/raft-me-libra-04.svg"/>
                     <img alt="logo" class="absolute mace-gri h-28 z-50" src="@/images/mace-gri.svg"/>
                 </div>
             </div>
-            <div class="relative grid grid-cols-5 gap-16 items-center justify-center py-2.5 px-48 bg-dark-ecstasy">
-                <RouterLink to="/" class="font-bold text-2xl font-vonique text-cinnamonMilkDark">Home
-                </RouterLink>
-                <a href="#books" class="font-bold text-2xl font-vonique text-cinnamonMilkDark">Books
-                </a>
-                <a href="#events" class="font-bold text-2xl font-vonique text-cinnamonMilkDark">Events
-                </a>
-                <RouterLink to="/about" class="font-bold text-2xl font-vonique text-cinnamonMilkDark">About us
-                </RouterLink>
-                <RouterLink to="/contact" class="font-bold text-2xl font-vonique text-cinnamonMilkDark">
-                    Contact
-                </RouterLink>
+            <div class="relative items-center justify-center py-2.5 px-48 bg-dark-ecstasy">
+                <div class="max-w-7xl mx-auto grid grid-cols-5 gap-16">
+                    <RouterLink to="/"
+                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                        Home
+                    </RouterLink>
+                    <a href="#books"
+                       class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">Books
+                    </a>
+                    <a href="#events"
+                       class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">Events
+                    </a>
+                    <RouterLink to="/about"
+                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                        About us
+                    </RouterLink>
+                    <RouterLink to="/contact"
+                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                        Contact
+                    </RouterLink>
+                </div>
             </div>
         </div>
     </header>
@@ -147,22 +170,22 @@ const showMobileMenu = ref(false);
 <style scoped>
 .raft-libra-01 {
     top: 20rem;
-    left: -3rem;
+    left: -2rem;
 }
 
 .raft-libra-02 {
-    top: 20rem;
+    top: 20.5rem;
     left: 55rem;
 }
 
 .raft-llambe {
-    top: 14.2rem;
+    top: 20.4rem;
     left: 10rem;
 }
 
 .vazo-lule {
     top: 13.8rem;
-    left: 28rem;
+    left: 25rem;
 }
 
 .raft-lule {
@@ -173,12 +196,31 @@ const showMobileMenu = ref(false);
 
 .raft-libra-03 {
     top: 20.2rem;
-    left: 35rem;
+    left: 33rem;
+}
+
+.raft-libra-04 {
+    top: 19.8rem;
+    left: 76rem;
 }
 
 .mace-gri {
     z-index: 50;
     top: 22.9rem;
-    right: 4.2rem;
+    right: 5rem;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
 }
 </style>

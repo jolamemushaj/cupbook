@@ -1,4 +1,17 @@
 <script setup>
+import {ref} from "vue";
+
+const error = ref('');
+const theValue = ref('user');
+
+const theInput = ($event) => {
+    theValue.value = $event.target.value
+    if (theValue.value.length < 5) {
+        error.value = "Must be greater than 5 chars"
+    } else {
+        error.value = ''
+    }
+}
 </script>
 
 <template>
@@ -28,10 +41,15 @@
                             class="inline-flex items-center rounded-l-md border border-r-0 border-gray-500 px-4 text-gray-500 sm:text-sm">
                             <i class="fa-solid fa-user text-gray-700 text-lg"></i>
                         </span>
-                        <input type="text" name="company-website" id="company-website"
+                        <input v-bind:value="theValue"
+                               v-on:input="theInput"
+                               type="text"
+                               name="company-website"
+                               id="company-website"
                                class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
                         >
                     </div>
+                    <div class="text-xs mt-2 text-red-700">{{error}}</div>
                 </div>
                 <div class="w-full">
                     <label for="company-website"

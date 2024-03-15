@@ -4,40 +4,40 @@
 
 <template>
     <div>
-        <div class="mt-12 bg-tile px-12">
+        <div class="mt-12 bg-tile px-12 md:pl-44 md:pr-20 font-glorify">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-8">
                 <div class="flex flex-col space-y-2 text-white">
-                    <div class=" pt-4 tracking-wider font-semibold text-base">SHOPPING WITH US</div>
-                    <div class="font-light tracking-wider">Client’s Card</div>
-                    <div class="font-light tracking-wider">Gift Card</div>
-                    <div class="font-light tracking-wider">CupBook Plus</div>
-                    <div class="font-light tracking-wider">Special Orders</div>
+                    <div class="pt-12 pb-2 tracking-widest font-semibold text-lg">SHOPPING WITH US</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Client’s Card</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Gift Card</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">CupBook Plus</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Special Orders</div>
                 </div>
                 <div class="flex flex-col space-y-2 text-white">
-                    <div class=" pt-4 tracking-wider font-semibold text-base">COSTUMER SERVICES</div>
-                    <div class="font-light tracking-wider">Help</div>
-                    <div class="font-light tracking-wider">Delivery</div>
-                    <div class="font-light tracking-wider">Payment Methods</div>
-                    <div class="font-light tracking-wider">Privacy Policy</div>
-                    <div class="font-light tracking-wider">Legal Notice</div>
+                    <div class="pt-12 pb-2 tracking-widest leading-5 font-semibold text-lg">COSTUMER SERVICES</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Help</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Delivery</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Payment Methods</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Privacy Policy</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Legal Notice</div>
                 </div>
                 <div class="flex flex-col space-y-2 text-white">
-                    <div class=" pt-4 tracking-wider font-semibold text-base">CONTACT US</div>
-                    <div class="font-light tracking-wider">CupBook</div>
-                    <div class="font-light tracking-wider">Adress: "Reshit Collaku" street, Tirana, Albania</div>
-                    <div class="font-light tracking-wider">+000 - 2428 -158</div>
-                    <div class="font-light tracking-wider">cupbook@gmail.com</div>
-                    <div class="font-light tracking-wider">www.cupbookshop.com</div>
+                    <div class="pt-12 pb-2 tracking-widest leading-5 font-semibold text-lg">CONTACT US</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">CupBook</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Adress: "Reshit Collaku" street, Tirana, Albania</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">+000 - 2428 -158</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">cupbook@gmail.com</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">www.cupbookshop.com</div>
                 </div>
                 <div class="flex flex-col space-y-2 text-white">
-                    <div class=" pt-4 tracking-wider font-semibold text-base">FOLLOW US</div>
-                    <div class="font-light tracking-wider">Facebook</div>
-                    <div class="font-light tracking-wider">Instagram</div>
+                    <div class="pt-12 pb-2 tracking-widest leading-5 font-semibold text-lg">FOLLOW US</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Facebook</div>
+                    <div class="font-light tracking-widest leading-5 text-sm">Instagram</div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-dark-tile text-cinnamonMilkDark text-center text-xs py-6">
+        <div class="bg-dark-tile text-cinnamonMilkDark text-center text-xs py-6 font-glorify tracking-widest">
             <div>Copyright 2004 -2024 | All rights reserved.</div>
             <div>This website or any portion thereof may not be reproduced or used in any manner whatsoever without the
                 permission of the owner.
