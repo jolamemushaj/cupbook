@@ -181,7 +181,7 @@ const subscribe = () => {
             </button>
         </div>
 
-        <div class="flex flex-col items-center space-y-4 mt-12 mx-8">
+        <div class="flex flex-col items-center space-y-4 mt-12 mx-12">
             <div class="font-black text-4xl">Subscribe to CupBook Newsletter</div>
             <div class="font-semibold text-gray-500 text-md">Be the first to know about CupBook new arrivals and
                 exclusive offers.
@@ -190,14 +190,14 @@ const subscribe = () => {
                    type="email"
                    name="email"
                    id="email"
-                   class="block w-full lg:w-1/3 border-0 py-4 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-lg focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
+                   class="block w-full lg:w-1/3 border-0 rounded-md py-4 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-lg focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                    placeholder="Email">
             <div class="text-xs text-red-700">{{ newsletterEmailErrors }}</div>
 
             <div v-if="newsletterSuccessMessage" class="text-cinnamon bg-leaf text-center p-2 rounded-md mb-2">{{ newsletterSuccessMessage }}</div>
             <button @click="subscribe"
                     type="button"
-                    class="w-full lg:w-auto max-w-sm mb-6 rounded-md bg-cinnamon-darker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamon-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamon"
+                    class="w-full lg:w-auto max-w-md mb-6 rounded-md bg-cinnamon-darker px-8 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamon-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamon"
             >Subscribe
             </button>
         </div>

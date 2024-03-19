@@ -1,7 +1,7 @@
 <template>
     <div class="about">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-16 mx-4 lg:mx-16 place-items-center">
-            <div class="relative flex flex-col border border-amber-950 shadow-lg shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
+            <div class="relative flex flex-col border border-amber-950 hover:shadow-lg hover:shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
                 <div
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     About CupBook
@@ -11,10 +11,10 @@
                     Welcome to CupBook, a cozy haven for book lovers and avid readers alike.
                     Founded with a passion for literature and a love for the written word, CupBook is more than just a
                     bookstore - it's a community,
-                    a sanctuary, and a place where stories come to life.
+                    a sanctuary, and a place where stories come to life with each turn of the page.
                 </div>
             </div>
-            <div class="relative flex flex-col border border-amber-950 shadow-lg shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
+            <div class="relative flex flex-col border border-amber-950 hover:shadow-lg hover:shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
                 <div
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     Our Story
@@ -27,7 +27,7 @@
                     taste and ignite their imagination.
                 </div>
             </div>
-            <div class="relative flex flex-col border border-amber-950 shadow-lg shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
+            <div class="relative flex flex-col border border-amber-950 hover:shadow-lg hover:shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">
                 <div
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     Our Mission
@@ -53,8 +53,8 @@
 
             <div class="flex flex-row justify-between bg-cinnamon-dark h-48">
                 <button
-                    class="py-4 px-4 bg-white rounded-md shadow-md shadow-yellow-950 self-center items-center mx-12 lg:mx-24 text-xl md:text-4xl text-ecstasy font-bold font-primary uppercase">
-                    join us
+                    class="py-8 px-8 bg-white rounded-md shadow-md shadow-yellow-950 self-center items-center mx-12 lg:mx-24 text-xl md:text-4xl text-ecstasy font-bold font-primary">
+                    jOIN US
                 </button>
                 <img alt="logo" class="w-1/3" src="@/images/photo21.jpeg"/>
             </div>

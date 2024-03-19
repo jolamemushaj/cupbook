@@ -15,7 +15,7 @@ const toggleMobileMenu = () => {
             <div class="mx-auto max-w-7xl px-8 py-4 bg-leaf">
                 <div class="flex h-16 items-center justify-between">
                     <a href="/" class="relative text-cinnamon-dark text-4xl font-secondary">
-                        cupbook
+                        CupBook
                     </a>
                     <div class="-mr-2 flex xl:hidden">
                         <!-- Mobile menu button -->
@@ -160,21 +160,21 @@ const toggleMobileMenu = () => {
             <div class="relative items-center justify-center py-3 px-48 bg-ecstasy-dark">
                 <div class="max-w-7xl mx-auto grid grid-cols-5 gap-16">
                     <RouterLink to="/"
-                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
+                                class="font-bold tracking-widest text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         Home
                     </RouterLink>
                     <a href="#books"
-                       class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Books
+                       class="font-bold tracking-widest text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Books
                     </a>
                     <a href="#events"
-                       class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Events
+                       class="font-bold tracking-widest text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Events
                     </a>
                     <RouterLink to="/about"
-                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
+                                class="font-bold tracking-widest text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         About us
                     </RouterLink>
                     <RouterLink to="/contact"
-                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
+                                class="font-bold tracking-widest text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         Contact
                     </RouterLink>
                 </div>
