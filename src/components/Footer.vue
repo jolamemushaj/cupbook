@@ -5,7 +5,7 @@
 <template>
     <div>
         <div class="mt-12 bg-tile px-12 md:pl-44 md:pr-20 font-glorify">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:gap-12 pb-8">
                 <div class="flex flex-col space-y-2 text-white">
                     <div class="pt-12 pb-2 tracking-widest font-semibold text-lg">SHOPPING WITH US</div>
                     <div class="font-light tracking-widest leading-5 text-sm">Client’s Card</div>

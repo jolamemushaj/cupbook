@@ -24,7 +24,7 @@
                     CupBook was born out of a shared vision to create a space where bookworms could gather, explore, and
                     connect over their mutual love for books. With a carefully curated selection of titles spanning
                     various genres, we strive to cater to every reader's
-                    taste and ignite their imagination with each turn of the page.
+                    taste and ignite their imagination.
                 </div>
             </div>
             <div class="relative flex flex-col border border-amber-950 shadow-lg shadow-gray-500 w-5/6 md:w-9/12 lg:w-full">

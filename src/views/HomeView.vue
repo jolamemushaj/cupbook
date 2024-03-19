@@ -69,7 +69,7 @@ const books = [
 ]
 
 const filteredBooks = computed(() => {
-    if (! searchQuery.value) return [];
+    if (!searchQuery.value) return [];
 
     return books.filter(function (book) {
         return book.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
@@ -92,20 +92,22 @@ const filteredBooks = computed(() => {
                 <button class="absolute right-6 top-2 text-4xl text-tile fa-solid fa-magnifying-glass"></button>
             </div>
 
-            <div v-if="filteredBooks.length"
-                 id="books"
-                 class="bg-cinnamonMilky px-12 mt-16 py-8"
-            >
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
-                    <div v-for="book in filteredBooks">
-                        <img alt="logo" class="w-80" :src="book.cover"/>
-                        <div class="pt-4 tracking-widest font-semibold text-base text-center">
-                            {{ book.title }}
+            <Transition name="slide-fade">
+                <div v-if="filteredBooks.length"
+                     id="books"
+                     class="bg-cinnamonMilky px-12 mt-16 py-8"
+                >
+                    <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-4 gap-12">
+                        <div v-for="book in filteredBooks">
+                            <img alt="logo" class="object-cover w-72 h-80" :src="book.cover"/>
+                            <div class="pt-4 tracking-widest font-semibold text-base text-center">
+                                {{ book.title }}
+                            </div>
+                            <div class="font-light tracking-widest text-center text-sm">{{ book.author }}</div>
                         </div>
-                        <div class="font-light tracking-widest text-center text-sm">{{ book.author }}</div>
                     </div>
                 </div>
-            </div>
+            </Transition>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20 mx-6 md:mx-12">
                 <div class="flex flex-row justify-between md:space-x-8 bg-cinnamonMilkDark">
@@ -169,7 +171,7 @@ const filteredBooks = computed(() => {
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12 pb-8">
+                <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-5 gap-12 pb-8">
                     <div class="">
                         <img alt="logo" class="w-80" src="@/images/photo03.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center">To kill a
@@ -208,39 +210,39 @@ const filteredBooks = computed(() => {
 
             <div class="mt-12 bg-cinnamonMilky px-12">
                 <div class="py-12 text-center text-5xl font-semibold font-vonique">New Arrivals</div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
-                    <div class="">
-                        <div class="relative">
+                <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
+                    <div class="w-full">
+                        <div class="w-full relative h-80">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo08.jpeg"/>
                         </div>
                         <div class=" pt-4 tracking-wider font-semibold text-base text-center">BOX SET</div>
                         <div class="font-light tracking-widest text-center">Diary of a Wimpy Kid Box of Books</div>
                     </div>
-                    <div class="">
-                        <div class="relative">
+                    <div class="w-full">
+                        <div class="w-full relative h-80">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo09.jpeg"/>
                         </div>
                         <div class=" pt-4 tracking-wider font-semibold text-base text-center">BOOK BUNDLE</div>
                         <div class="font-light tracking-widest text-center">Vintage Quarterbound Classics Collection I
                         </div>
                     </div>
-                    <div class="">
-                        <div class="relative">
+                    <div class="w-full">
+                        <div class="w-full relative h-80">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo10.jpeg"/>
                         </div>
                         <div class=" pt-4 tracking-wider font-semibold text-base text-center">BOOK BUNDLE</div>
                         <div class="font-light tracking-widest text-center">Murakami Collectible Classics II</div>
                     </div>
-                    <div class="">
-                        <div class="relative">
+                    <div class="w-full">
+                        <div class="w-full relative h-80">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo11.jpeg"/>
                         </div>
                         <div class=" pt-4 tracking-wider font-semibold text-base text-center">BOOK BUNDLE</div>
@@ -251,7 +253,7 @@ const filteredBooks = computed(() => {
 
             <div class="mt-12 bg-cinnamonMilky px-12">
                 <div class="py-12 text-center text-5xl font-semibold font-vonique">Bestsellers</div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
+                <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="">
                         <div class="relative">
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
@@ -300,7 +302,7 @@ const filteredBooks = computed(() => {
 
             <div id="events" class="mt-12 bg-cinnamonMilky px-12">
                 <div class="py-12 text-center text-5xl font-semibold font-vonique">Events</div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
+                <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="">
                         <div class="">
                             <img alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
@@ -340,3 +342,19 @@ const filteredBooks = computed(() => {
         </div>
     </main>
 </template>
+<style scoped>
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+</style>
+
