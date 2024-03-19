@@ -10,18 +10,12 @@ export default {
             fontFamily: {
                 'vonique': ['Vonique64', 'serif'],
                 'glorify': ['GlorifyDEMO', 'serif'],
-                'texGyreAdventor': ['TeX Gyre Adventor', 'serif'],
-
-                //TeX Gyre Adventor (OTF)
-                // TeX Gyre Adventor Bold (OTF)
-                // Vonique 64 Bold Italic (TrueType)
-                // Vonique64 (OTF)
-                // Vonique 64 Bold (TrueType)
-                // Glorify DEMO (OTF)
+                'texGyreAdventor': ['"TeX Gyre Adventor"', 'serif'],
             },
             colors: {
                 'tile': '#1A6668',
                 'dark-tile': '#1B5257',
+                'tile-darker': '#025035',
                 'ecstasy': '#C46137',
                 'dark-ecstasy': '#9F4428',
                 'cinnamonMilky': '#F8EFE0',

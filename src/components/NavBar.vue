@@ -14,9 +14,9 @@ const toggleMobileMenu = () => {
         <nav class="block xl:hidden">
             <div class="mx-auto max-w-7xl px-8 py-4 bg-tile">
                 <div class="flex h-16 items-center justify-between">
-                    <div class="relative text-cinnamonMilkDark text-4xl font-glorify">
+                    <a href="/" class="relative text-cinnamonMilkDark text-4xl font-glorify">
                         cupbook
-                    </div>
+                    </a>
                     <div class="-mr-2 flex xl:hidden">
                         <!-- Mobile menu button -->
                         <button @click=toggleMobileMenu type="button"
@@ -124,10 +124,26 @@ const toggleMobileMenu = () => {
                     </div>
                 </div>
             </div>
-            <div class="bg-cinnamonMilkDark md:pb-24">
+            <div class="bg-cinnamonMilkDark md:pb-20">
                 <div class="flex flex-row justify-between px-32">
-                    <img alt="logo" class="w-80 h-48" src="@/images/first-nav-logo.svg" width="125" height="125"/>
-                    <img alt="logo" class="w-2/3 h-48" src="@/images/second-nav-logo.svg" width="125" height="125"/>
+                    <img alt="logo" class="w-72 h-40 pt-8" src="@/images/first-nav-logo.svg" width="125" height="125"/>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         viewBox="0 0 459 127"
+                         class="w-2/3 h-52 pt-4"
+                         xml:space="preserve"
+                    >
+                        <g>
+                            <g>
+                                <text transform="matrix(1 0 0 1 168.6172 121)" class="fill-tile-darker font-vonique text-[33px]">sip into stories</text>
+                            </g>
+                            <g>
+                                <text transform="matrix(1.009 0 0 1 -3.906250e-03 78.293)" class="logo-stroke stroke-ecstasy fill-tile font-glorify text-[104px]">CupBook</text>
+                            </g>
+                        </g>
+                    </svg>
+
+
                 </div>
                 <div class="max-w-7xl mx-auto flex flex-row">
                     <img alt="logo" class="absolute raft-libra-01 w-80" src="@/images/raft-me-libra-01.svg"/>
@@ -141,7 +157,7 @@ const toggleMobileMenu = () => {
                     <img alt="logo" class="absolute mace-gri h-28 z-50" src="@/images/mace-gri.svg"/>
                 </div>
             </div>
-            <div class="relative items-center justify-center py-2.5 px-48 bg-dark-ecstasy">
+            <div class="relative items-center justify-center py-3 px-48 bg-dark-ecstasy">
                 <div class="max-w-7xl mx-auto grid grid-cols-5 gap-16">
                     <RouterLink to="/"
                                 class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
@@ -208,6 +224,11 @@ const toggleMobileMenu = () => {
     z-index: 50;
     top: 22.9rem;
     right: 5rem;
+}
+
+.logo-stroke {
+    stroke-width: 4.2545;
+    stroke-miterlimit: 10;
 }
 
 .slide-fade-enter-active {
