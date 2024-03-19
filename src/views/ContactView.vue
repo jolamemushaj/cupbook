@@ -5,17 +5,18 @@ const form = ref({
     lastName: '',
     firstName: '',
     email: '',
-    phone: ''
+    phone: '',
 });
 const formSubmitted = ref(false);
 const successMessage = ref('');
+
 
 const formErrors = computed(() => {
     return {
         lastName: formSubmitted.value && form.value.lastName.length < 3 ? "Must be greater than 2 chars" : '',
         firstName: formSubmitted.value && form.value.firstName.length < 3 ? "Must be greater than 2 chars" : '',
         email: formSubmitted.value && form.value.email.length < 3 ? "Must be greater than 2 chars" : '',
-        phone: formSubmitted.value && form.value.phone.length < 3 ? "Must be greater than 2 chars" : ''
+        phone: formSubmitted.value && form.value.phone.length < 3 ? "Must be greater than 2 chars" : '',
     }
 })
 
@@ -31,22 +32,45 @@ const submit = () => {
             form.value.phone = '';
             formSubmitted.value = false;
             successMessage.value = '';
-        }, 9000);
+        }, 3000);
+    }
+}
+
+
+
+const newsletterEmail = ref('');
+const newsletterSubmitted = ref(false);
+const newsletterSuccessMessage = ref('');
+
+const newsletterEmailErrors = computed(() => {
+    return newsletterSubmitted.value && newsletterEmail.value.length < 3 ? "Must be greater than 2 chars" : '';
+})
+
+const subscribe = () => {
+    newsletterSubmitted.value = true;
+    if (newsletterEmail.value.length > 2) {
+        newsletterSuccessMessage.value = 'Thank you for subscribing!';
+
+        setTimeout(() => {
+            newsletterEmail.value = '';
+            newsletterSubmitted.value = false;
+            newsletterSuccessMessage.value = '';
+        }, 3000);
     }
 }
 
 </script>
 
 <template>
-    <div class="lg:px-20 lg:py-16">
+    <div class="lg:px-20 lg:pt-16">
         <div class="relative flex items-center">
             <div
-                class="absolute px-12 md:p-20 w-full text-2xl md:text-5xl text-white font-black font-vonique uppercase">
-                <div>Get in touch</div>
-                <div>with us</div>
-                <div>Cupbook - your secret place</div>
+                class="absolute px-12 md:p-24 w-full text-3xl md:text-5xl text-white font-black font-vonique uppercase">
+                <div class="p-1">Get in touch</div>
+                <div class="p-1">with us</div>
+                <div class="p-1">Cupbook - your secret place</div>
             </div>
-            <img src="@/images/photo25.jpeg" alt="contact us" class="w-full h-72 object-cover"/>
+            <img src="@/images/photo25.jpeg" alt="contact us" class="w-full h-80 object-cover"/>
         </div>
 
         <div class="mt-6 lg:mt-12 px-12 lg:border lg:border-gray-100 lg:shadow-md lg:shadow-gray-300">
@@ -148,7 +172,7 @@ const submit = () => {
                 </div>
             </div>
 
-            <div v-if="successMessage" class="text-cinnamonMilk bg-tile text-center p-1 rounded-md mb-2">{{ successMessage }}</div>
+            <div v-if="successMessage" class="text-cinnamonMilk bg-tile text-center p-2 rounded-md mb-2">{{ successMessage }}</div>
 
             <button @click="submit"
                     type="button"
@@ -162,14 +186,17 @@ const submit = () => {
             <div class="font-semibold text-gray-500 text-md">Be the first to know about CupBook new arrivals and
                 exclusive offers.
             </div>
-            <input v-model="form.email"
+            <input v-model="newsletterEmail"
                    type="email"
                    name="email"
                    id="email"
                    class="block w-full lg:w-1/3 border-0 py-4 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-lg focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
                    placeholder="Email">
-            <div class="text-xs text-red-700">{{ formErrors.email }}</div>
-            <button type="button"
+            <div class="text-xs text-red-700">{{ newsletterEmailErrors }}</div>
+
+            <div v-if="newsletterSuccessMessage" class="text-cinnamonMilk bg-tile text-center p-2 rounded-md mb-2">{{ newsletterSuccessMessage }}</div>
+            <button @click="subscribe"
+                    type="button"
                     class="w-full lg:w-auto max-w-sm mb-6 rounded-md bg-cinnamonMilkDarker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamonMilkDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamonMilk"
             >Subscribe
             </button>
