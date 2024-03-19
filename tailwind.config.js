@@ -8,30 +8,27 @@ export default {
         extend: {
             // Add a custom font family
             fontFamily: {
-                'vonique': ['Vonique64', 'serif'],
-                'glorify': ['GlorifyDEMO', 'serif'],
-                'texGyreAdventor': ['"TeX Gyre Adventor"', 'serif'],
+                'primary': ['Vonique64', 'serif'],
+                'secondary': ['GlorifyDEMO', 'serif'],
+                'ternary': ['"TeX Gyre Adventor"', 'serif'],
             },
             colors: {
-                'tile': '#1A6668',
-                'dark-tile': '#1B5257',
-                'tile-darker': '#025035',
-                'ecstasy': '#C46137',
-                'dark-ecstasy': '#9F4428',
-                'cinnamonMilky': '#F8EFE0',
-                'cinnamonMilk': '#F1E6D1',
-                'cinnamonMilkDark': '#EBD9B6',
-                'cinnamonMilkDarker': '#C9B37C',
+                leaf: {
+                    DEFAULT: '#1A6668',
+                    dark: '#1B5257',
+                    darker: '#025035',
+                },
+                ecstasy: {
+                    DEFAULT: '#C46137',
+                    dark: '#9F4428',
+                },
+                cinnamon: {
+                    light: '#F8EFE0',
+                    DEFAULT: '#F1E6D1',
+                    dark: '#EBD9B6',
+                    darker: '#C9B37C'
+                }
             },
-            letterSpacing: {
-                tightest: '-.075em',
-                tighter: '-.05em',
-                tight: '-.025em',
-                normal: '0',
-                wide: '.025em',
-                wider: '.05em',
-                widest: '.15em',
-            }
         },
     },
     plugins: [],

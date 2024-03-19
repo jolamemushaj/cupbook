@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <div class="mt-12 bg-tile px-12 md:pl-44 md:pr-20 font-glorify">
+        <div class="mt-12 bg-leaf px-12 md:pl-44 md:pr-20 font-secondary">
             <div class="grid grid-cols-1 md:grid-cols-4 lg:gap-12 pb-8">
                 <div class="flex flex-col space-y-2 text-white">
                     <div class="pt-12 pb-2 tracking-widest font-semibold text-lg">SHOPPING WITH US</div>
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="bg-dark-tile text-cinnamonMilkDark text-center text-xs py-6 font-glorify tracking-widest">
+        <div class="bg-leaf-dark text-cinnamon-dark text-center text-xs py-6 font-secondary tracking-widest">
             <div>Copyright 2004 -2024 | All rights reserved.</div>
             <div>This website or any portion thereof may not be reproduced or used in any manner whatsoever without the
                 permission of the owner.

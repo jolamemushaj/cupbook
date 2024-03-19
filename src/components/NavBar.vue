@@ -12,15 +12,15 @@ const toggleMobileMenu = () => {
     <header>
         <!----------------- MOBILE---------------->
         <nav class="block xl:hidden">
-            <div class="mx-auto max-w-7xl px-8 py-4 bg-tile">
+            <div class="mx-auto max-w-7xl px-8 py-4 bg-leaf">
                 <div class="flex h-16 items-center justify-between">
-                    <a href="/" class="relative text-cinnamonMilkDark text-4xl font-glorify">
+                    <a href="/" class="relative text-cinnamon-dark text-4xl font-secondary">
                         cupbook
                     </a>
                     <div class="-mr-2 flex xl:hidden">
                         <!-- Mobile menu button -->
                         <button @click=toggleMobileMenu type="button"
-                                class="relative inline-flex items-center justify-center rounded-md p-1 text-cinnamonMilkDark hover:text-cinnamonMilk focus:outline-none"
+                                class="relative inline-flex items-center justify-center rounded-md p-1 text-cinnamon-dark hover:text-cinnamon focus:outline-none"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
                         >
@@ -63,33 +63,33 @@ const toggleMobileMenu = () => {
             <!-- Mobile menu, show/hide based on menu state. -->
             <Transition name="slide-fade">
                 <div v-if="showMobileMenu" class="xl:hidden" id="mobile-menu">
-                    <div class="space-y-1 px-4 pb-3 pt-6 bg-cinnamonMilkDark">
+                    <div class="space-y-1 px-4 pb-3 pt-6 bg-cinnamon-dark">
                         <RouterLink @click="toggleMobileMenu"
                                     to="/"
-                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                                    class="font-primary font-black block rounded-md px-3 py-2 text-lg text-leaf-dark hover:bg-leaf hover:text-cinnamon"
                         >
                             Home
                         </RouterLink>
                         <a @click="toggleMobileMenu"
                            href="/#books"
-                           class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                           class="font-primary font-black block rounded-md px-3 py-2 text-lg text-leaf-dark hover:bg-leaf hover:text-cinnamon"
                         >
                             Books
                         </a>
                         <a @click="toggleMobileMenu"
                            href="/#events"
-                           class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk"
+                           class="font-primary font-black block rounded-md px-3 py-2 text-lg text-leaf-dark hover:bg-leaf hover:text-cinnamon"
                         >
                             Events
                         </a>
                         <RouterLink @click="toggleMobileMenu"
                                     to="/about"
-                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">
+                                    class="font-primary font-black block rounded-md px-3 py-2 text-lg text-leaf-dark hover:bg-leaf hover:text-cinnamon">
                             About Us
                         </RouterLink>
                         <RouterLink @click="toggleMobileMenu"
                                     to="/contact"
-                                    class="font-vonique font-black block rounded-md px-3 py-2 text-lg text-dark-tile hover:bg-tile hover:text-cinnamonMilk">
+                                    class="font-primary font-black block rounded-md px-3 py-2 text-lg text-leaf-dark hover:bg-leaf hover:text-cinnamon">
                             Contact
                         </RouterLink>
                     </div>
@@ -100,11 +100,11 @@ const toggleMobileMenu = () => {
 
         <!----------------- DESKTOP---------------->
         <div class="relative hidden xl:block ">
-            <div class="flex justify-center bg-tile text-2xl text-cinnamonMilkDark py-3.5 font-glorify">
+            <div class="flex justify-center bg-leaf text-2xl text-cinnamon-dark py-3.5 font-secondary">
                 Sign up and enjoy 10% discount on all your purchases
             </div>
-            <div class="flex flex-row justify-between items-center bg-ecstasy px-12 font-glorify">
-                <a href="/" class="text-white text-3xl font-glorify">CupBook</a>
+            <div class="flex flex-row justify-between items-center bg-ecstasy px-12 font-secondary">
+                <a href="/" class="text-white text-3xl font-secondary">CupBook</a>
                 <div class="flex flex-row space-x-6 text-white py-1">
                     <div class="flex flex-col items-center">
                         <i class="text-xl fa-solid fa-flag"></i>
@@ -124,7 +124,7 @@ const toggleMobileMenu = () => {
                     </div>
                 </div>
             </div>
-            <div class="bg-cinnamonMilkDark md:pb-20">
+            <div class="bg-cinnamon-dark md:pb-20">
                 <div class="flex flex-row justify-between px-32">
                     <img alt="logo" class="w-72 h-40 pt-8" src="@/images/first-nav-logo.svg" width="125" height="125"/>
 
@@ -135,10 +135,10 @@ const toggleMobileMenu = () => {
                     >
                         <g>
                             <g>
-                                <text transform="matrix(1 0 0 1 168.6172 121)" class="fill-tile-darker font-vonique text-[33px]">sip into stories</text>
+                                <text transform="matrix(1 0 0 1 168.6172 121)" class="fill-leaf-darker font-primary text-[33px]">sip into stories</text>
                             </g>
                             <g>
-                                <text transform="matrix(1.009 0 0 1 -3.906250e-03 78.293)" class="logo-stroke stroke-ecstasy fill-tile font-glorify text-[104px]">CupBook</text>
+                                <text transform="matrix(1.009 0 0 1 -3.906250e-03 78.293)" class="logo-stroke stroke-ecstasy fill-leaf font-secondary text-[104px]">CupBook</text>
                             </g>
                         </g>
                     </svg>
@@ -157,24 +157,24 @@ const toggleMobileMenu = () => {
                     <img alt="logo" class="absolute mace-gri h-28 z-50" src="@/images/mace-gri.svg"/>
                 </div>
             </div>
-            <div class="relative items-center justify-center py-3 px-48 bg-dark-ecstasy">
+            <div class="relative items-center justify-center py-3 px-48 bg-ecstasy-dark">
                 <div class="max-w-7xl mx-auto grid grid-cols-5 gap-16">
                     <RouterLink to="/"
-                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         Home
                     </RouterLink>
                     <a href="#books"
-                       class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">Books
+                       class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Books
                     </a>
                     <a href="#events"
-                       class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">Events
+                       class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">Events
                     </a>
                     <RouterLink to="/about"
-                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         About us
                     </RouterLink>
                     <RouterLink to="/contact"
-                                class="font-bold text-2xl font-vonique text-cinnamonMilkDark hover:text-white focus:text-white">
+                                class="font-bold text-2xl font-primary text-cinnamon-dark hover:text-white focus:text-white">
                         Contact
                     </RouterLink>
                 </div>

@@ -88,14 +88,14 @@ const filteredBooks = computed(() => {
                        type="text"
                        name="name"
                        id="name"
-                       class="block w-full bg-cinnamonMilkDark rounded-full px-12 py-4 text-gray-900 focus:ring-2 focus:ring-offset focus:ring-dark-tile sm:text-sm sm:leading-6">
-                <button class="absolute right-6 top-2 text-4xl text-tile fa-solid fa-magnifying-glass"></button>
+                       class="block w-full bg-cinnamon-dark rounded-full px-12 py-4 text-gray-900 focus:ring-2 focus:ring-offset focus:ring-leaf-dark sm:text-sm sm:leading-6">
+                <button class="absolute right-6 top-2 text-4xl text-leaf fa-solid fa-magnifying-glass"></button>
             </div>
 
             <Transition name="slide-fade">
                 <div v-if="filteredBooks.length"
                      id="books"
-                     class="bg-cinnamonMilky px-12 mt-16 py-8"
+                     class="bg-cinnamon-light px-12 mt-16 py-8"
                 >
                     <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-4 gap-12">
                         <div v-for="book in filteredBooks">
@@ -110,26 +110,26 @@ const filteredBooks = computed(() => {
             </Transition>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20 mx-6 md:mx-12">
-                <div class="flex flex-row justify-between md:space-x-8 bg-cinnamonMilkDark">
+                <div class="flex flex-row justify-between md:space-x-8 bg-cinnamon-dark">
                     <div class="flex flex-col space-y-8 self-center w-1/2 px-8 py-6 lg:py-20">
-                        <div class="text-3xl md:text-4xl xl:text-6xl text-tile font-glorify">
+                        <div class="text-3xl md:text-4xl xl:text-6xl text-leaf font-secondary">
                             Albanian titles
                         </div>
                         <button type="button"
-                                class="w-min whitespace-nowrap rounded-lg px-2 py-1 text-md md:text-xl lg:text-2xl text-tile font-glorify border border-tile shadow-inner shadow-neutral-400 hover:shadow-xl">
+                                class="w-min whitespace-nowrap rounded-lg px-2 py-1 text-md md:text-xl lg:text-2xl text-leaf font-secondary border border-leaf shadow-inner shadow-neutral-400 hover:shadow-xl">
                             Click here
                         </button>
                     </div>
                     <img alt="logo" class="object-cover w-1/2" src="@/images/photo01.jpeg"/>
                 </div>
 
-                <div class="flex flex-row justify-between md:space-x-8 bg-cinnamonMilkDark">
+                <div class="flex flex-row justify-between md:space-x-8 bg-cinnamon-dark">
                     <div class="flex flex-col space-y-8 self-center w-1/2 px-8 py-6 lg:py-20">
-                        <div class="text-3xl md:text-4xl xl:text-6xl text-tile font-glorify">
+                        <div class="text-3xl md:text-4xl xl:text-6xl text-leaf font-secondary">
                             Foreign titles
                         </div>
                         <button type="button"
-                                class="w-min whitespace-nowrap rounded-lg px-2 py-1 text-md md:text-xl lg:text-2xl text-tile font-glorify border border-tile shadow-inner shadow-neutral-400 hover:shadow-xl">
+                                class="w-min whitespace-nowrap rounded-lg px-2 py-1 text-md md:text-xl lg:text-2xl text-leaf font-secondary border border-leaf shadow-inner shadow-neutral-400 hover:shadow-xl">
                             Click here
                         </button>
                     </div>
@@ -137,16 +137,16 @@ const filteredBooks = computed(() => {
                 </div>
             </div>
 
-            <div id="books" class="mt-12 bg-cinnamonMilky px-12">
+            <div id="books" class="mt-12 bg-cinnamon-light px-12">
                 <div class="py-12">
                     <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row justify-between opacity-90">
                         <div
-                            class="inline-flex justify-center gap-x-1.5 rounded-md bg-cinnamonMilkDark px-6 py-2 hover:shadow-sm">
-                            <label for="category" class="block font-glorify text-2xl text-tile tracking-widest ">Category:</label>
-                            <div class="-mr-1 text-2xl text-ecstasy font-glorify">
+                            class="inline-flex justify-center gap-x-1.5 rounded-md bg-cinnamon-dark px-6 py-2 hover:shadow-sm">
+                            <label for="category" class="block font-secondary text-2xl text-leaf tracking-widest ">Category:</label>
+                            <div class="-mr-1 text-2xl text-ecstasy font-secondary">
                                 <select id="category"
                                         name="category"
-                                        class="text-2xl text-ecstasy font-glorify bg-transparent"
+                                        class="text-2xl text-ecstasy font-secondary bg-transparent"
                                 >
                                     <option>Classics</option>
                                     <option selected>Romance</option>
@@ -155,13 +155,13 @@ const filteredBooks = computed(() => {
                             </div>
                         </div>
                         <div
-                            class="inline-flex justify-center gap-x-1.5 rounded-md bg-cinnamonMilkDark px-6 py-2 hover:shadow-sm">
-                            <label for="category" class="block font-glorify text-2xl text-tile tracking-widest ">Filter
+                            class="inline-flex justify-center gap-x-1.5 rounded-md bg-cinnamon-dark px-6 py-2 hover:shadow-sm">
+                            <label for="category" class="block font-secondary text-2xl text-leaf tracking-widest ">Filter
                                 by:</label>
-                            <div class="-mr-1 text-2xl text-ecstasy font-glorify">
+                            <div class="-mr-1 text-2xl text-ecstasy font-secondary">
                                 <select id="category"
                                         name="category"
-                                        class="text-2xl text-ecstasy font-glorify bg-transparent"
+                                        class="text-2xl text-ecstasy font-secondary bg-transparent"
                                 >
                                     <option>Author</option>
                                     <option selected>Title</option>
@@ -208,12 +208,12 @@ const filteredBooks = computed(() => {
                 </div>
             </div>
 
-            <div class="mt-12 bg-cinnamonMilky px-12">
-                <div class="py-12 text-center text-5xl font-semibold font-vonique">New Arrivals</div>
+            <div class="mt-12 bg-cinnamon-light px-12">
+                <div class="py-12 text-center text-5xl font-semibold font-primary">New Arrivals</div>
                 <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="w-full">
                         <div class="w-full relative h-80">
-                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
+                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo08.jpeg"/>
                         </div>
@@ -222,7 +222,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="w-full">
                         <div class="w-full relative h-80">
-                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
+                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo09.jpeg"/>
                         </div>
@@ -232,7 +232,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="w-full">
                         <div class="w-full relative h-80">
-                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
+                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo10.jpeg"/>
                         </div>
@@ -241,7 +241,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="w-full">
                         <div class="w-full relative h-80">
-                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-vonique text-white bg-emerald-600">New</span>
+                            <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo11.jpeg"/>
                         </div>
@@ -251,15 +251,15 @@ const filteredBooks = computed(() => {
                 </div>
             </div>
 
-            <div class="mt-12 bg-cinnamonMilky px-12">
-                <div class="py-12 text-center text-5xl font-semibold font-vonique">Bestsellers</div>
+            <div class="mt-12 bg-cinnamon-light px-12">
+                <div class="py-12 text-center text-5xl font-semibold font-primary">Bestsellers</div>
                 <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="">
                         <div class="relative">
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo12.jpeg"/>
                             <span
-                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-glorify text-white uppercase bg-amber-500">Best <br> Seller</span>
+                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
                         </div>
                         <div class=" pt-4 tracking-wider font-semibold text-base text-center">The Heaven & Earth Grocery
                             Store
@@ -269,7 +269,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span
-                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-glorify text-white uppercase bg-amber-500">Best <br> Seller</span>
+                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo13.jpeg"/>
                         </div>
@@ -280,7 +280,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span
-                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-glorify text-white uppercase bg-amber-500">Best <br> Seller</span>
+                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo14.jpeg"/>
                         </div>
@@ -290,7 +290,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span
-                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-glorify text-white uppercase bg-amber-500">Best <br> Seller</span>
+                                class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
                             <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo15.jpeg"/>
                         </div>
@@ -300,8 +300,8 @@ const filteredBooks = computed(() => {
                 </div>
             </div>
 
-            <div id="events" class="mt-12 bg-cinnamonMilky px-12">
-                <div class="py-12 text-center text-5xl font-semibold font-vonique">Events</div>
+            <div id="events" class="mt-12 bg-cinnamon-light px-12">
+                <div class="py-12 text-center text-5xl font-semibold font-primary">Events</div>
                 <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="">
                         <div class="">

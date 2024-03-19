@@ -65,7 +65,7 @@ const subscribe = () => {
     <div class="lg:px-20 lg:pt-16">
         <div class="relative flex items-center">
             <div
-                class="absolute px-12 md:p-24 w-full text-3xl md:text-5xl text-white font-black font-vonique uppercase">
+                class="absolute px-12 md:p-24 w-full text-3xl md:text-5xl text-white font-black font-primary uppercase">
                 <div class="p-1">Get in touch</div>
                 <div class="p-1">with us</div>
                 <div class="p-1">Cupbook - your secret place</div>
@@ -93,7 +93,7 @@ const subscribe = () => {
                                type="text"
                                name="company-website"
                                id="company-website"
-                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
+                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                         >
                     </div>
                     <div class="mt-2 lg:ml-4 text-xs text-red-700">{{ formErrors.lastName }}</div>
@@ -112,7 +112,7 @@ const subscribe = () => {
                                type="text"
                                name="company-website"
                                id="company-website"
-                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
+                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                         >
                     </div>
                     <div class="mt-2 lg:ml-4 text-xs text-red-700">{{ formErrors.firstName }}</div>
@@ -134,7 +134,7 @@ const subscribe = () => {
                                type="text"
                                name="company-website"
                                id="company-website"
-                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
+                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                         >
                     </div>
                     <div class="mt-2 lg:ml-4 text-xs text-red-700">{{ formErrors.email }}</div>
@@ -153,7 +153,7 @@ const subscribe = () => {
                                type="text"
                                name="company-website"
                                id="company-website"
-                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
+                               class="block pl-4 w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-3 text-gray-900 ring-1 ring-inset ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                         >
                     </div>
                     <div class="mt-2 lg:ml-4 text-xs text-red-700">{{ formErrors.phone }}</div>
@@ -168,15 +168,15 @@ const subscribe = () => {
                     <textarea rows="4"
                               name="comment"
                               id="comment"
-                              class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"></textarea>
+                              class="block w-full rounded-lg border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"></textarea>
                 </div>
             </div>
 
-            <div v-if="successMessage" class="text-cinnamonMilk bg-tile text-center p-2 rounded-md mb-2">{{ successMessage }}</div>
+            <div v-if="successMessage" class="text-cinnamon bg-leaf text-center p-2 rounded-md mb-2">{{ successMessage }}</div>
 
             <button @click="submit"
                     type="button"
-                    class="w-full mb-6 rounded-md bg-cinnamonMilkDarker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamonMilkDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamonMilk"
+                    class="w-full mb-6 rounded-md bg-cinnamon-darker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamon-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamon"
             >Submit
             </button>
         </div>
@@ -190,14 +190,14 @@ const subscribe = () => {
                    type="email"
                    name="email"
                    id="email"
-                   class="block w-full lg:w-1/3 border-0 py-4 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-lg focus:ring-1 focus:ring-inset focus:ring-cinnamonMilkDark sm:text-sm sm:leading-6"
+                   class="block w-full lg:w-1/3 border-0 py-4 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-600 placeholder:font-semibold placeholder:text-lg focus:ring-1 focus:ring-inset focus:ring-cinnamon-dark sm:text-sm sm:leading-6"
                    placeholder="Email">
             <div class="text-xs text-red-700">{{ newsletterEmailErrors }}</div>
 
-            <div v-if="newsletterSuccessMessage" class="text-cinnamonMilk bg-tile text-center p-2 rounded-md mb-2">{{ newsletterSuccessMessage }}</div>
+            <div v-if="newsletterSuccessMessage" class="text-cinnamon bg-leaf text-center p-2 rounded-md mb-2">{{ newsletterSuccessMessage }}</div>
             <button @click="subscribe"
                     type="button"
-                    class="w-full lg:w-auto max-w-sm mb-6 rounded-md bg-cinnamonMilkDarker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamonMilkDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamonMilk"
+                    class="w-full lg:w-auto max-w-sm mb-6 rounded-md bg-cinnamon-darker px-3.5 py-3 text-md font-semibold text-black shadow-sm hover:bg-cinnamon-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cinnamon"
             >Subscribe
             </button>
         </div>
