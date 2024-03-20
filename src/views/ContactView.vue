@@ -70,7 +70,7 @@ const subscribe = () => {
                 <div class="p-1">with us</div>
                 <div class="p-1">Cupbook - your secret place</div>
             </div>
-            <img src="@/images/photo25.jpeg" alt="contact us" class="w-full h-80 object-cover"/>
+            <img loading="lazy" src="@/images/photo25.jpeg" alt="contact us" class="w-full h-80 object-cover"/>
         </div>
 
         <div class="mt-6 lg:mt-12 px-12 lg:border lg:border-gray-100 lg:shadow-md lg:shadow-gray-300">

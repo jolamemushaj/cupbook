@@ -6,7 +6,7 @@
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     About CupBook
                 </div>
-                <img class="h-52 md:h-72 lg:h-80 object-cover" src="@/images/photo22.jpeg">
+                <img loading="lazy" class="h-52 md:h-72 lg:h-80 object-cover" src="@/images/photo22.jpeg">
                 <div class="px-4 py-4 text-center text-ecstasy-dark text-sm font-semibold tracking-wide">
                     Welcome to CupBook, a cozy haven for book lovers and avid readers alike.
                     Founded with a passion for literature and a love for the written word, CupBook is more than just a
@@ -19,7 +19,7 @@
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     Our Story
                 </div>
-                <img class="h-52 md:h-80 object-cover" src="@/images/photo23.jpeg">
+                <img loading="lazy" class="h-52 md:h-80 object-cover" src="@/images/photo23.jpeg">
                 <div class="px-4 py-4 text-center text-ecstasy-dark text-sm font-semibold tracking-wide">
                     CupBook was born out of a shared vision to create a space where bookworms could gather, explore, and
                     connect over their mutual love for books. With a carefully curated selection of titles spanning
@@ -32,7 +32,7 @@
                     class="absolute mt-12 w-full h-1/5 flex items-center justify-center bg-cinnamon-dark/85 text-center text-4xl text-white font-primary uppercase">
                     Our Mission
                 </div>
-                <img class="h-52 md:h-72 lg:h-80 object-cover" src="@/images/photo24.jpeg">
+                <img loading="lazy" class="h-52 md:h-72 lg:h-80 object-cover" src="@/images/photo24.jpeg">
                 <div class="px-4 py-4 text-center text-ecstasy-dark text-sm font-semibold tracking-wide">
                     At CupBook, our mission is simple: to foster a love for reading and provide a welcoming environment
                     where everyone feels at home. Whether you're seeking a new literary adventure or a quiet corner to
@@ -44,7 +44,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-16 my-20">
             <div class="flex flex-row justify-between bg-cinnamon-dark h-48">
-                <img alt="logo" class=" w-1/3" src="@/images/photo20.jpeg"/>
+                <img loading="lazy" alt="logo" class=" w-1/3" src="@/images/photo20.jpeg"/>
                 <button
                     class="py-4 px-4 bg-white rounded-md shadow-md shadow-yellow-950 self-center items-center mx-12 lg:mx-24 text-xl md:text-4xl text-ecstasy font-bold font-primary uppercase">
                     Meet the team
@@ -56,7 +56,7 @@
                     class="py-8 px-8 bg-white rounded-md shadow-md shadow-yellow-950 self-center items-center mx-12 lg:mx-24 text-xl md:text-4xl text-ecstasy font-bold font-primary">
                     jOIN US
                 </button>
-                <img alt="logo" class="w-1/3" src="@/images/photo21.jpeg"/>
+                <img loading="lazy" alt="logo" class="w-1/3" src="@/images/photo21.jpeg"/>
             </div>
         </div>
     </div>

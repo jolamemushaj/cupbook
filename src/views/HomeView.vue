@@ -99,7 +99,7 @@ const filteredBooks = computed(() => {
                 >
                     <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-4 gap-12">
                         <div v-for="book in filteredBooks">
-                            <img alt="logo" class="object-cover w-72 h-80" :src="book.cover"/>
+                            <img loading="lazy" alt="logo" class="object-cover w-72 h-80" :src="book.cover"/>
                             <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">
                                 {{ book.title }}
                             </div>
@@ -120,7 +120,7 @@ const filteredBooks = computed(() => {
                             Click here
                         </button>
                     </div>
-                    <img alt="logo" class="object-cover w-1/2" src="@/images/photo01.jpeg"/>
+                    <img loading="lazy" alt="logo" class="object-cover w-1/2" src="@/images/photo01.jpeg"/>
                 </div>
 
                 <div class="flex flex-row justify-between md:space-x-8 bg-cinnamon-dark">
@@ -133,7 +133,7 @@ const filteredBooks = computed(() => {
                             Click here
                         </button>
                     </div>
-                    <img alt="logo" class="object-cover w-1/2" src="@/images/photo02.jpeg"/>
+                    <img loading="lazy" alt="logo" class="object-cover w-1/2" src="@/images/photo02.jpeg"/>
                 </div>
             </div>
 
@@ -173,33 +173,33 @@ const filteredBooks = computed(() => {
 
                 <div class="grid grid-cols-1 justify-items-center md:grid-cols-3 lg:grid-cols-5 gap-12 pb-8">
                     <div class="">
-                        <img alt="logo" class="w-80" src="@/images/photo03.jpeg"/>
+                        <img loading="lazy" alt="logo" class="w-80" src="@/images/photo03.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">To kill a
                             mockingbird
                         </div>
                         <div class="font-light tracking-widest text-center text-sm">Harper Lee</div>
                     </div>
                     <div class="">
-                        <img alt="logo" class="w-80" src="@/images/photo04.jpeg"/>
+                        <img loading="lazy" alt="logo" class="w-80" src="@/images/photo04.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">Pride and
                             Prejudice
                         </div>
                         <div class="font-light tracking-widest text-center text-sm">Jane Austen</div>
                     </div>
                     <div class="">
-                        <img alt="logo" class="w-80" src="@/images/photo05.jpeg"/>
+                        <img loading="lazy" alt="logo" class="w-80" src="@/images/photo05.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">Crime and
                             Punishment
                         </div>
                         <div class="font-light tracking-widest text-center text-sm">Fyodor Dostoyevsky</div>
                     </div>
                     <div class="">
-                        <img alt="logo" class="w-80" src="@/images/photo06.jpeg"/>
+                        <img loading="lazy" alt="logo" class="w-80" src="@/images/photo06.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">1984</div>
                         <div class="font-light tracking-widest text-center text-sm">George Orwell</div>
                     </div>
                     <div class="">
-                        <img alt="logo" class="w-80" src="@/images/photo07.jpeg"/>
+                        <img loading="lazy" alt="logo" class="w-80" src="@/images/photo07.jpeg"/>
                         <div class="pt-4 tracking-widest font-semibold text-base text-center hover:underline cursor-pointer">Great
                             Expectations
                         </div>
@@ -214,7 +214,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo08.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">BOX SET</div>
@@ -223,7 +223,7 @@ const filteredBooks = computed(() => {
                     <div class="l">
                         <div class="relative">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo09.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">BOOK BUNDLE</div>
@@ -233,7 +233,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span class="absolute -right-1.5 top-3 px-1 text-sm font-primary text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo10.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">BOOK BUNDLE</div>
@@ -242,7 +242,7 @@ const filteredBooks = computed(() => {
                     <div class="">
                         <div class="relative">
                             <span class="absolute -right-1.5 top-3 px-2 text-sm font-primary text-white bg-emerald-600">New</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white h-full"
                                  src="@/images/photo11.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">BOOK BUNDLE</div>
@@ -258,7 +258,7 @@ const filteredBooks = computed(() => {
                         <div class="relative">
                             <span
                                 class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo12.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">The Heaven & Earth Grocery
@@ -270,7 +270,7 @@ const filteredBooks = computed(() => {
                         <div class="relative">
                             <span
                                 class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo13.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">The Covenant of Water
@@ -281,7 +281,7 @@ const filteredBooks = computed(() => {
                         <div class="relative">
                             <span
                                 class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo14.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">Lessons in Chemistry</div>
@@ -291,7 +291,7 @@ const filteredBooks = computed(() => {
                         <div class="relative">
                             <span
                                 class="absolute -right-1.5 top-3 px-2 text-sm font-light font-secondary text-white uppercase bg-amber-500">Best <br> Seller</span>
-                            <img alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
+                            <img loading="lazy" alt="logo" class="object-cover ring-2 ring-offset-4 ring-white w-80 h-80"
                                  src="@/images/photo15.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">The Lost Bookshop</div>
@@ -305,7 +305,7 @@ const filteredBooks = computed(() => {
                 <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8">
                     <div class="">
                         <div class="">
-                            <img alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
+                            <img loading="lazy" alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
                                  src="@/images/photo16.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">Blind Date</div>
@@ -313,7 +313,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="">
                         <div class="">
-                            <img alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
+                            <img loading="lazy" alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
                                  src="@/images/photo17.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">Bring your pet</div>
@@ -322,7 +322,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="">
                         <div class="">
-                            <img alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
+                            <img loading="lazy" alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
                                  src="@/images/photo18.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">Read and Sip</div>
@@ -331,7 +331,7 @@ const filteredBooks = computed(() => {
                     </div>
                     <div class="">
                         <div class="">
-                            <img alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
+                            <img loading="lazy" alt="logo" class="object-cover w-80 h-80 ring-2 ring-offset-4 ring-white"
                                  src="@/images/photo19.jpeg"/>
                         </div>
                         <div class="pt-4 tracking-wider font-semibold text-base text-center hover:underline cursor-pointer">Future Events</div>

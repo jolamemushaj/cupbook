@@ -104,7 +104,7 @@ const toggleMobileMenu = () => {
                 Sign up and enjoy 10% discount on all your purchases
             </div>
             <div class="flex flex-row justify-between items-center bg-ecstasy px-12 font-secondary">
-                <a href="/" class="text-white text-3xl font-secondary">CupBook</a>
+                <RouterLink to="/" class="text-white text-3xl font-secondary">CupBook</RouterLink>
                 <div class="flex flex-row space-x-6 text-white py-1">
                     <div class="flex flex-col items-center">
                         <i class="text-xl fa-solid fa-flag"></i>
